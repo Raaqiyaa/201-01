@@ -83,6 +83,15 @@
     <footer>
     <script>
 
+    console.log("Welcome!");
+
+      function userName() {
+      user = prompt("Please tell me your name?");
+      alert ("what a lovely name!")
+  }
+
+userName();
+
      console.log("I can confirm that this log is logged");
     
      let animalSound = prompt("if you had to communicate only through animal sounds for a day, which animal sounds would you choose?") 
@@ -106,23 +115,37 @@
     console.log("I can confirm that this log is logged");
     
     
-    
-    function location (italy){
-    let location = prompt("What country has the best cuisine?")?
-    let cusine = prompt (what italian dish would you eat?)?
-    let message = "" 
-    }
 
-    if (cusine <= pizza && location === italy){
-        message = "Great"!;
+    function locationQuiz() {
+    let location = prompt("What country has the best cuisine?")
+    let cuisine = prompt("what Italian dish would you eat?")
+    let message = "" 
+
+    if (cuisine === "pizza" && location.toLowerCase() === "italy") {
+        message = "Great!";
+    } else if (cuisine === "pasta") {
+        message = "Good choice";
+    } else {
+        message = "I love that too!";
+     }
+     return document.write(message)
+}
+locationQuiz()
+
+console.log("I can confirm that this log is logged");
+
+    
+let Pet = prompt("what pet would you rather keep a Cat or Dog?") 
+    if (Pet === "Cat"){
+        alert("You've got to be kitten me!... good choice")
+    } else if (Pet === "DOG"){
+      alert("I hate dogs boo!")
     }
-        else if ("cusine <= "italy") {
-        message = "good choice";
-    }
-        else {
-        message = thats correct!
-        }
-     return document.write (message)
+        
+    alert("great," + Pet + " would be fun!")
+
+  
+
 </script>
 
 
